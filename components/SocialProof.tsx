@@ -10,17 +10,22 @@ const SocialProof: React.FC = () => {
                     Trusted by Leaders At
                 </div>
 
-                <div className="flex-1 flex flex-col md:flex-row items-center justify-center gap-12">
-                    {/* Logo placeholders - Text based for industry vertical clarity */}
-                    <div className="flex items-center gap-2 grayscale opacity-60 hover:opacity-100 transition-opacity">
-                        <div className="font-bold text-xl text-stone-800 font-sans tracking-tight">Solar<span className="text-olive-600">Pro</span></div>
-                    </div>
-                    <div className="flex items-center gap-2 grayscale opacity-60 hover:opacity-100 transition-opacity">
-                        <div className="font-bold text-xl text-stone-800 font-serif">Edu<span className="italic">Scale</span></div>
-                    </div>
-                    <div className="flex items-center gap-2 grayscale opacity-60 hover:opacity-100 transition-opacity">
-                        <div className="font-bold text-xl text-stone-800 tracking-wide">INSURE<span className="font-light">TECH</span></div>
-                    </div>
+                <div className="flex-1 flex flex-wrap items-center justify-center gap-8 md:gap-12">
+                    {/* Client Logos: Add matching PNGs to public/logos/ */}
+                    {['client1.png', 'client2.png', 'client3.png', 'client4.png'].map((logo, i) => (
+                        <div key={i} className="h-8 md:h-10 w-auto opacity-50 hover:opacity-100 transition-all duration-300 grayscale hover:grayscale-0 cursor-pointer">
+                            <img
+                                src={`/logos/${logo}`}
+                                alt={`Client ${i + 1}`}
+                                className="h-full w-auto object-contain"
+                                onError={(e) => {
+                                    (e.target as HTMLImageElement).style.display = 'none';
+                                }}
+                            />
+                        </div>
+                    ))}
+                    {/* Fallback Text (Remove once logos are added) */}
+                    {/* <div className="text-stone-300 text-xs font-mono">Add client1.png - client4.png to /public/logos</div> */}
                 </div>
 
                 {/* Featured Testimonial */}
