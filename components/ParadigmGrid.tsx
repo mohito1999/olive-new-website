@@ -6,9 +6,9 @@ const ParadigmGrid: React.FC = () => {
     return (
         <section className="py-24 px-6 max-w-7xl mx-auto w-full">
             <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-5xl font-bold text-stone-900 mb-4">Why Your Leads Are Dying</h2>
+                <h2 className="text-3xl md:text-5xl font-bold text-stone-900 mb-4">Why Leads Drop Off</h2>
                 <p className="text-lg text-stone-500 max-w-2xl mx-auto">
-                    Traditional sales teams are too slow. Traditional software is too dumb. The old model is broken.
+                    Most teams respond too slowly. Most tools don’t adapt. The result is lost intent.
                 </p>
             </div>
 
@@ -20,9 +20,9 @@ const ParadigmGrid: React.FC = () => {
                         <div className="w-14 h-14 bg-gradient-to-br from-red-50 to-red-100 rounded-2xl border border-red-100 flex items-center justify-center mb-6 text-red-600 shadow-sm">
                             <Clock size={28} />
                         </div>
-                        <h3 className="text-2xl font-bold text-stone-900 mb-2">Leads Decay Instantly</h3>
+                        <h3 className="text-2xl font-bold text-stone-900 mb-2">Leads Lose Value Quickly</h3>
                         <p className="text-stone-500 leading-relaxed">
-                            5 minute response time = 10x drop in conversion. Humans can't react fast enough to inbound interest.
+                            Most inbound leads expect a fast reply. Even a short delay causes intent to drop and conversion by 8-10x.
                         </p>
                     </div>
                     <div className="mt-8 flex-1 bg-white border-t border-stone-100 p-6 relative overflow-hidden flex items-center justify-center">

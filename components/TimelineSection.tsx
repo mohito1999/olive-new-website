@@ -14,7 +14,7 @@ const TimelineSection: React.FC = () => {
                         The Campaign Engine
                     </h2>
                     <p className="text-lg text-stone-400 max-w-xl mx-auto">
-                        Olive orchestrates complex, multi-day journeys. It's not just a dialer; it's a persistent intelligent system.
+                        Olive orchestrates complex, multi-day journeys autonomously.
                     </p>
                 </div>
 
@@ -57,7 +57,7 @@ const TimelineSection: React.FC = () => {
                                     <div className="space-y-2">
                                         <div className="flex justify-between items-center text-[10px] text-stone-500">
                                             <span>Name</span>
-                                            <span className="text-stone-300">Mike Thompson</span>
+                                            <span className="text-stone-300">Arjun M</span>
                                         </div>
                                         <div className="flex justify-between items-center text-[10px] text-stone-500">
                                             <span>Interest</span>
@@ -84,7 +84,7 @@ const TimelineSection: React.FC = () => {
                                             <div className="absolute inset-0 rounded-full border border-olive-500/30 animate-ping"></div>
                                             <Phone size={24} className="text-olive-500" />
                                         </div>
-                                        <div className="text-white font-bold text-lg mb-1">Lead: Mike</div>
+                                        <div className="text-white font-bold text-lg mb-1">Lead: Arjun</div>
                                         <div className="text-stone-400 text-xs mb-1">Personal Loan</div>
                                         <div className="text-olive-400 text-sm font-mono mb-4">00:12</div>
                                         <div className="flex items-center gap-1">
@@ -123,7 +123,7 @@ const TimelineSection: React.FC = () => {
                                     className="max-w-xs"
                                 >
                                     <div className="bg-[#2a2a2a] text-stone-200 p-3 rounded-2xl rounded-bl-none text-sm mb-2 w-fit">
-                                        Hi Mike, saw your interest in securing a personal loan. Still interested?
+                                        Hi Arjun, saw your interest in securing a personal loan. Still interested?
                                     </div>
                                     <div className="text-[10px] text-stone-500 font-medium pl-1">Delivered</div>
                                 </motion.div>
@@ -147,7 +147,7 @@ const TimelineSection: React.FC = () => {
                                 </div>
                                 <div>
                                     <div className="text-sm font-bold">Transferring Lead</div>
-                                    <div className="text-xs text-stone-500">Mike is ready on Line 1</div>
+                                    <div className="text-xs text-stone-500">Arjun is ready on Line 1</div>
                                 </div>
                                 <div className="ml-auto">
                                     <button className="bg-stone-900 text-white text-xs px-3 py-1.5 rounded-lg">Pick Up</button>

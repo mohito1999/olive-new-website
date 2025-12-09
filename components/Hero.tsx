@@ -14,10 +14,10 @@ const Hero: React.FC = () => {
   }, []);
 
   const feedItems = [
-    { type: 'call', text: 'Dialing Lead...', sub: 'Solar Inquiry (FB Ads)', icon: Smartphone, color: 'text-stone-400' },
+    { type: 'call', text: 'Dialing Lead...', sub: 'Loan Inquiry (FB Ads)', icon: Smartphone, color: 'text-stone-400' },
     { type: 'voice', text: 'Qualifying...', sub: 'Credit Score > 720', icon: Mic, color: 'text-orange-400' },
     { type: 'success', text: 'Consultation Booked', sub: 'Tomorrow, 10am', icon: CheckCircle2, color: 'text-emerald-400' },
-    { type: 'crm', text: 'Syncing HubSpot', sub: 'Deal Value: $25k', icon: Activity, color: 'text-blue-400' },
+    { type: 'crm', text: 'Syncing CRM', sub: 'Deal Value: ₹2L', icon: Activity, color: 'text-blue-400' },
   ];
 
   return (

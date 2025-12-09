@@ -174,9 +174,9 @@ const FintechDashboard = () => {
                     </div>
                 </div>
                 <div className="space-y-3 text-xs">
-                    <div className="text-stone-400">"Hi John, I see you're looking for a $50k personal loan. Do you have a minute?"</div>
+                    <div className="text-stone-400">"Hi Arjun, I see you're looking for a ₹2L personal loan. Do you have a minute?"</div>
                     <div className="text-stone-500 italic pl-2 border-l-2 border-stone-800">"Yes, but I'm at work. Can we talk later?"</div>
-                    <div className="text-stone-400">"No problem. I've booked a slot for 5 PM today. You'll get a calendar invite shortly."</div>
+                    <div className="text-stone-400">"No problem. I'll give you a call at 5 PM today. You'll get a calendar invite shortly."</div>
                 </div>
             </motion.div>
         </motion.div>
@@ -263,7 +263,7 @@ const RealEstateDashboard = () => {
             >
                 <div className="space-y-3">
                     <div className="bg-stone-800 p-3 rounded-lg rounded-tl-none text-xs text-stone-300 border border-stone-700 w-fit">
-                        "Hi Sarah, 3 new units just opened up at The Heights. Want to see them this weekend?"
+                        "Hi Anjali, 3 new units just opened up at. Want to see them this weekend?"
                     </div>
                     <div className="bg-olive-500/10 p-3 rounded-lg rounded-tr-none text-xs text-olive-200 border border-olive-500/20 ml-auto w-fit">
                         "Yes, actually! Is Saturday morning open?"
