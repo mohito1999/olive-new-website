@@ -7,14 +7,14 @@ const SocialProof: React.FC = () => {
             <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
 
                 <div className="text-stone-400 text-sm font-semibold uppercase tracking-widest">
-                    Trusted by Leaders At
+                    Trusted by Sales Leaders At
                 </div>
 
                 <div className="flex-1 flex flex-wrap items-center justify-center gap-8 md:gap-12">
                     {/* Client Logos: Add matching PNGs to public/logos/ */}
                     {/* Client Logos */}
                     {[
-                        { src: 'client1.png', className: 'h-10 md:h-12' }, // GrowthSchool (Too small -> Larger)
+                        { src: 'client1.png', className: 'h-14 md:h-16' }, // GrowthSchool (Too small -> Larger)
                         { src: 'client2.png', className: 'h-6 md:h-7' },   // HolidayTribe (Too big -> Smaller)
                         { src: 'client3.png', className: 'h-7 md:h-8' },   // Swipe (Current is ~10, slightly smaller)
                     ].map((logo, i) => (
