@@ -12,10 +12,15 @@ const SocialProof: React.FC = () => {
 
                 <div className="flex-1 flex flex-wrap items-center justify-center gap-8 md:gap-12">
                     {/* Client Logos: Add matching PNGs to public/logos/ */}
-                    {['client1.png', 'client2.png', 'client3.png', 'client4.png'].map((logo, i) => (
-                        <div key={i} className="h-8 md:h-10 w-auto opacity-50 hover:opacity-100 transition-all duration-300 grayscale hover:grayscale-0 cursor-pointer">
+                    {/* Client Logos */}
+                    {[
+                        { src: 'client1.png', className: 'h-10 md:h-12' }, // GrowthSchool (Too small -> Larger)
+                        { src: 'client2.png', className: 'h-6 md:h-7' },   // HolidayTribe (Too big -> Smaller)
+                        { src: 'client3.png', className: 'h-7 md:h-8' },   // Swipe (Current is ~10, slightly smaller)
+                    ].map((logo, i) => (
+                        <div key={i} className={`${logo.className} w-auto opacity-50 hover:opacity-100 transition-all duration-300 grayscale hover:grayscale-0 cursor-pointer`}>
                             <img
-                                src={`/logos/${logo}`}
+                                src={`/logos/${logo.src}`}
                                 alt={`Client ${i + 1}`}
                                 className="h-full w-auto object-contain"
                                 onError={(e) => {
