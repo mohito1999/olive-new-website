@@ -67,7 +67,7 @@ const IndustryUseCases: React.FC = () => {
                 </div>
 
                 {/* Cinematic Dashboard Visual */}
-                <div className="relative w-full max-w-6xl mx-auto aspect-[16/9] md:aspect-[21/9] lg:aspect-[2/1] bg-stone-950 rounded-3xl border border-stone-800 shadow-2xl overflow-hidden flex flex-col">
+                <div className="relative w-full max-w-6xl mx-auto min-h-[600px] md:min-h-0 md:aspect-[21/9] lg:aspect-[2/1] bg-stone-950 rounded-3xl border border-stone-800 shadow-2xl overflow-hidden flex flex-col">
 
                     {/* Window Controls */}
                     <div className="h-10 border-b border-stone-800 bg-stone-900/50 flex items-center px-4 gap-2 z-20 relative">
@@ -122,13 +122,14 @@ const Node = ({ icon: Icon, label, subLabel, active = false, delay = 0 }: any) =
 );
 
 const Connector = ({ active = false, delay = 0 }: any) => (
-    <div className="h-[2px] w-12 md:w-20 bg-stone-800 relative self-start mt-6 mx-2">
+    <div className="relative bg-stone-800 self-center md:self-start
+        w-[2px] h-8 my-1 md:w-20 md:h-[2px] md:mx-2 md:mt-6 md:my-0">
         {active && (
             <motion.div
-                initial={{ width: 0 }}
-                animate={{ width: '100%' }}
+                className="absolute bg-olive-500 top-0 left-0"
+                initial={{ height: 0, width: 0 }}
+                animate={{ height: '100%', width: '100%' }}
                 transition={{ delay, duration: 0.5 }}
-                className="absolute top-0 left-0 h-full bg-olive-500"
             />
         )}
     </div>
@@ -144,7 +145,7 @@ const FintechDashboard = () => {
             exit={{ opacity: 0 }}
             className="w-full flex flex-col items-center justify-center"
         >
-            <div className="flex items-start justify-center">
+            <div className="flex flex-col md:flex-row items-center md:items-start justify-center">
                 <Node icon={MousePointerClick} label="Ad Click" subLabel="Facebook" active={true} delay={0} />
                 <Connector active={true} delay={0.3} />
                 <Node icon={FileText} label="Lead Form" subLabel="Loan Inquiry" active={true} delay={0.6} />
@@ -190,7 +191,7 @@ const EdtechDashboard = () => {
             exit={{ opacity: 0 }}
             className="w-full flex flex-col items-center justify-center"
         >
-            <div className="flex items-start justify-center">
+            <div className="flex flex-col md:flex-row items-center md:items-start justify-center">
                 <Node icon={Users} label="Website" subLabel="Visitor" active={true} delay={0} />
                 <Connector active={true} delay={0.3} />
                 <Node icon={MessageCircle} label="Chatbot" subLabel="Inquiry" active={true} delay={0.6} />
@@ -241,7 +242,7 @@ const RealEstateDashboard = () => {
             exit={{ opacity: 0 }}
             className="w-full flex flex-col items-center justify-center"
         >
-            <div className="flex items-start justify-center">
+            <div className="flex flex-col md:flex-row items-center md:items-start justify-center">
                 <Node icon={Database} label="Lead DB" subLabel="Cold Leads" active={true} delay={0} />
                 <Connector active={true} delay={0.3} />
                 <Node icon={Filter} label="Segment" subLabel="6mo+ Old" active={true} delay={0.6} />
@@ -284,7 +285,7 @@ const InsuranceDashboard = () => {
             exit={{ opacity: 0 }}
             className="w-full flex flex-col items-center justify-center"
         >
-            <div className="flex items-start justify-center">
+            <div className="flex flex-col md:flex-row items-center md:items-start justify-center">
                 <Node icon={FileText} label="Policy" subLabel="Expiring" active={true} delay={0} />
                 <Connector active={true} delay={0.3} />
                 <Node icon={Clock} label="Trigger" subLabel="3 Days Left" active={true} delay={0.6} />
