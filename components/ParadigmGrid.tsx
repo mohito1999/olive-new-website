@@ -17,8 +17,8 @@ const ParadigmGrid: React.FC = () => {
                 {/* Card 1: The Speed Problem */}
                 <div className="bg-stone-50 rounded-3xl border border-stone-200 overflow-hidden flex flex-col hover:shadow-lg transition-shadow group h-[500px]">
                     <div className="p-8 pb-0">
-                        <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-6 text-red-600">
-                            <Clock size={24} />
+                        <div className="w-14 h-14 bg-gradient-to-br from-red-50 to-red-100 rounded-2xl border border-red-100 flex items-center justify-center mb-6 text-red-600 shadow-sm">
+                            <Clock size={28} />
                         </div>
                         <h3 className="text-2xl font-bold text-stone-900 mb-2">Leads Decay Instantly</h3>
                         <p className="text-stone-500 leading-relaxed">
@@ -48,8 +48,8 @@ const ParadigmGrid: React.FC = () => {
                 {/* Card 2: The Volume Problem */}
                 <div className="bg-stone-50 rounded-3xl border border-stone-200 overflow-hidden flex flex-col hover:shadow-lg transition-shadow group h-[500px]">
                     <div className="p-8 pb-0">
-                        <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-6 text-orange-600">
-                            <Users size={24} />
+                        <div className="w-14 h-14 bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl border border-orange-100 flex items-center justify-center mb-6 text-orange-600 shadow-sm">
+                            <Users size={28} />
                         </div>
                         <h3 className="text-2xl font-bold text-stone-900 mb-2">Humans Can't Scale</h3>
                         <p className="text-stone-500 leading-relaxed">
@@ -99,8 +99,8 @@ const ParadigmGrid: React.FC = () => {
                 {/* Card 3: The Solution */}
                 <div className="bg-stone-900 rounded-3xl border border-stone-800 overflow-hidden flex flex-col shadow-2xl h-[500px] relative">
                     <div className="p-8 pb-0 relative z-10">
-                        <div className="w-12 h-12 bg-olive-500/20 rounded-xl flex items-center justify-center mb-6 text-olive-500">
-                            <InfinityIcon size={24} />
+                        <div className="w-14 h-14 bg-gradient-to-br from-olive-500/10 to-olive-500/20 rounded-2xl border border-olive-500/20 flex items-center justify-center mb-6 text-olive-400 shadow-sm">
+                            <InfinityIcon size={28} />
                         </div>
                         <h3 className="text-2xl font-bold text-white mb-2">Olive is Infinite</h3>
                         <p className="text-stone-400 leading-relaxed">
@@ -112,14 +112,28 @@ const ParadigmGrid: React.FC = () => {
                         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-olive-900/20 via-stone-950 to-stone-950"></div>
 
                         <div className="relative z-10 text-center">
-                            <div className="text-5xl font-bold text-white mb-2 font-mono tracking-tighter">
-                                <motion.span
-                                    initial={{ opacity: 0 }}
-                                    whileInView={{ opacity: 1 }}
-                                    transition={{ duration: 2 }}
-                                >
-                                    ∞
-                                </motion.span>
+                            <div className="h-24 w-48 mx-auto mb-4">
+                                <svg viewBox="0 0 140 100" className="w-full h-full drop-shadow-[0_0_15px_rgba(132,204,22,0.3)]">
+                                    <defs>
+                                        <linearGradient id="infinityGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" stopColor="#84cc16" />
+                                            <stop offset="100%" stopColor="#ecfccb" />
+                                        </linearGradient>
+                                    </defs>
+                                    <motion.path
+                                        d="M30,50 C30,75 55,75 70,50 C85,25 110,25 110,50 C110,75 85,75 70,50 C55,25 30,25 30,50 Z"
+                                        fill="none"
+                                        stroke="url(#infinityGradient)"
+                                        strokeWidth="8"
+                                        strokeLinecap="round"
+                                        initial={{ pathLength: 0, opacity: 0 }}
+                                        whileInView={{ pathLength: 1, opacity: 1 }}
+                                        transition={{
+                                            pathLength: { duration: 3, ease: "easeInOut", repeat: Infinity, repeatType: "reverse" },
+                                            opacity: { duration: 0.5 }
+                                        }}
+                                    />
+                                </svg>
                             </div>
                             <div className="text-olive-500 text-sm font-bold uppercase tracking-widest mb-6">Capacity</div>
 
