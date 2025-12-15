@@ -1,5 +1,6 @@
 import React from 'react';
-import { ArrowRight, Twitter, Linkedin, Github } from 'lucide-react';
+import { ArrowRight, Linkedin, Github } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -19,25 +20,24 @@ const Footer: React.FC = () => {
         </p>
 
         <div className="mb-24">
-          <button className="group bg-white hover:bg-stone-200 text-stone-950 px-10 py-5 rounded-xl text-lg font-bold transition-all shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)] hover:shadow-[0_0_60px_-10px_rgba(255,255,255,0.5)] hover:-translate-y-1 flex items-center gap-3">
+          <a href="https://cal.com/mohitatneurix/30min" target="_blank" rel="noopener noreferrer" className="group bg-white hover:bg-stone-200 text-stone-900 px-10 py-5 rounded-xl text-lg font-bold transition-all shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)] hover:shadow-[0_0_60px_-10px_rgba(255,255,255,0.5)] hover:-translate-y-1 flex items-center gap-3 inline-flex">
             Book a Demo
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-          </button>
+          </a>
         </div>
 
         <div className="w-full border-t border-stone-900 pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-stone-500">
-          <div className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <div className="w-6 h-6 bg-olive-500 rounded flex items-center justify-center">
               <div className="w-2.5 h-2.5 bg-stone-950 rounded-full" />
             </div>
             <span className="font-bold text-white text-lg tracking-tight">Olive</span>
-          </div>
+          </Link>
 
           <div className="flex gap-8">
-            <a href="#" className="hover:text-white transition-colors">Twitter</a>
-            <a href="#" className="hover:text-white transition-colors">LinkedIn</a>
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+            <a href="https://www.linkedin.com/company/olive-ai-hq/" className="hover:text-white transition-colors">LinkedIn</a>
+            <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
 
           <div className="font-mono text-xs">

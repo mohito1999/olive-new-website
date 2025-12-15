@@ -42,12 +42,12 @@ const Hero: React.FC = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-              <button className="bg-olive-600 hover:bg-olive-700 text-white px-8 py-4 rounded-xl text-base font-semibold transition-all shadow-lg hover:shadow-olive-200 hover:-translate-y-1 w-full sm:w-auto flex items-center justify-center gap-2">
+              {/* <button className="bg-olive-600 hover:bg-olive-700 text-white px-8 py-4 rounded-xl text-base font-semibold transition-all shadow-lg hover:shadow-olive-200 hover:-translate-y-1 w-full sm:w-auto flex items-center justify-center gap-2">
                 <Mic size={20} /> Talk to Olive
-              </button>
-              <button className="bg-white hover:bg-stone-50 text-stone-900 border border-stone-200 px-8 py-4 rounded-xl text-base font-semibold transition-all hover:border-stone-300 w-full sm:w-auto">
+              </button> */}
+              <a href="https://cal.com/mohitatneurix/30min" target="_blank" rel="noopener noreferrer" className="bg-olive-600 hover:bg-olive-700 text-white px-8 py-4 rounded-xl text-base font-semibold transition-all shadow-lg hover:shadow-olive-200 hover:-translate-y-1 w-full sm:w-auto text-center flex items-center justify-center gap-2">
                 Book a Demo
-              </button>
+              </a>
             </div>
 
             <p className="mt-6 text-xs text-stone-400 font-medium">
