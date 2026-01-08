@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
 
         <div className="mb-24">
           <a href="https://cal.com/mohitatneurix/30min" target="_blank" rel="noopener noreferrer" className="group bg-white hover:bg-stone-200 text-stone-900 px-10 py-5 rounded-xl text-lg font-bold transition-all shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)] hover:shadow-[0_0_60px_-10px_rgba(255,255,255,0.5)] hover:-translate-y-1 flex items-center gap-3 inline-flex">
-            Book a Demo
+            Book a Solution Sprint
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
           </a>
         </div>

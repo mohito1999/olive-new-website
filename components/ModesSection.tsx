@@ -28,40 +28,40 @@ const ModesSection: React.FC = () => {
                 {/* Left Col: Controls */}
                 <div className="lg:w-1/3 flex flex-col justify-center space-y-8">
                     <div>
-                        <h2 className="text-3xl font-bold text-stone-900 mb-4">You choose the control level.</h2>
-                        <p className="text-stone-500">Olive adapts to your management style. Strict adherence for compliance or autonomous optimization for results.</p>
+                        <h2 className="text-3xl font-bold text-stone-900 mb-4">Total Visibility & Strategic Alignment</h2>
+                        <p className="text-stone-500">You define the rules, we build the engine. Whether you need strict compliance or autonomous optimization, we configure the system to match your goals.</p>
                     </div>
 
                     <div className="space-y-4">
                         <button
                             onClick={() => setActiveMode('director')}
                             className={`w-full text-left p-6 rounded-2xl border transition-all duration-300 ${activeMode === 'director'
-                                    ? 'bg-stone-900 border-stone-900 text-white shadow-xl scale-105'
-                                    : 'bg-white border-stone-200 text-stone-500 hover:bg-stone-50'
+                                ? 'bg-stone-900 border-stone-900 text-white shadow-xl scale-105'
+                                : 'bg-white border-stone-200 text-stone-500 hover:bg-stone-50'
                                 }`}
                         >
                             <div className="flex items-center gap-3 mb-2">
                                 <GitMerge size={20} className={activeMode === 'director' ? 'text-olive-400' : 'text-stone-400'} />
-                                <h3 className="font-bold text-lg">Director Mode</h3>
+                                <h3 className="font-bold text-lg">Strict Compliance</h3>
                             </div>
                             <p className={`text-sm ${activeMode === 'director' ? 'text-stone-300' : 'text-stone-400'}`}>
-                                Visual Flow Builder. If Lead Source is 'FB Ads' &rarr; Call Immediately. You map the exact journey.
+                                You define the exact script and flow. We implement it with 100% adherence. Perfect for regulated industries.
                             </p>
                         </button>
 
                         <button
                             onClick={() => setActiveMode('strategist')}
                             className={`w-full text-left p-6 rounded-2xl border transition-all duration-300 ${activeMode === 'strategist'
-                                    ? 'bg-olive-600 border-olive-600 text-white shadow-xl scale-105'
-                                    : 'bg-white border-stone-200 text-stone-500 hover:bg-stone-50'
+                                ? 'bg-olive-600 border-olive-600 text-white shadow-xl scale-105'
+                                : 'bg-white border-stone-200 text-stone-500 hover:bg-stone-50'
                                 }`}
                         >
                             <div className="flex items-center gap-3 mb-2">
                                 <BrainCircuit size={20} className={activeMode === 'strategist' ? 'text-white' : 'text-stone-400'} />
-                                <h3 className="font-bold text-lg">Strategist Mode</h3>
+                                <h3 className="font-bold text-lg">Outcome Optimization</h3>
                             </div>
                             <p className={`text-sm ${activeMode === 'strategist' ? 'text-olive-100' : 'text-stone-400'}`}>
-                                Goal-Based Agent. "Get me 50 consults." Olive analyzes the list and executes the outreach.
+                                You set the target (e.g., "50 meetings"). We optimize the outreach strategy and channel mix to hit it.
                             </p>
                         </button>
                     </div>

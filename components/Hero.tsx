@@ -33,12 +33,11 @@ const Hero: React.FC = () => {
           >
 
             <h1 className="text-5xl md:text-7xl font-bold text-stone-900 leading-[1.05] mb-6 tracking-tight">
-              <br /> World's First <br />
-              <span className="text-olive-600">Long-Horizon Sales Agent</span>
+              Your AI Sales Team. <span className="text-olive-600">Fully Managed.</span>
             </h1>
 
             <p className="text-lg text-stone-500 leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
-              Sales isn’t a single interaction. Olive calls leads instantly, nurtures them over days, reactivates dead lists, and helps your team close more 24/7.
+              We orchestrate proprietary AI workflows that let your team handle 3x more leads. Calls, WhatsApps, and nurtures - done for you.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
@@ -46,7 +45,7 @@ const Hero: React.FC = () => {
                 <Mic size={20} /> Talk to Olive
               </button> */}
               <a href="https://cal.com/mohitatneurix/30min" target="_blank" rel="noopener noreferrer" className="bg-olive-600 hover:bg-olive-700 text-white px-8 py-4 rounded-xl text-base font-semibold transition-all shadow-lg hover:shadow-olive-200 hover:-translate-y-1 w-full sm:w-auto text-center flex items-center justify-center gap-2">
-                Book a Demo
+                Book a Solution Sprint
               </a>
             </div>
 

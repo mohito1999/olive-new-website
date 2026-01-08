@@ -5,6 +5,7 @@ import ParadigmGrid from './ParadigmGrid';
 import ModesSection from './ModesSection';
 import UseCases from './UseCases';
 import TimelineSection from './TimelineSection';
+import SolutionSprint from './SolutionSprint';
 import IndustryUseCases from './IndustryUseCases';
 
 const LandingPage: React.FC = () => {
@@ -13,6 +14,7 @@ const LandingPage: React.FC = () => {
             <Hero />
             <SocialProof />
             <div id="problem" className="w-full flex justify-center"><ParadigmGrid /></div>
+            <div className="w-full flex justify-center"><SolutionSprint /></div>
             <div id="engine" className="w-full flex justify-center"><TimelineSection /></div>
             <div id="modes" className="w-full flex justify-center"><ModesSection /></div>
             <div id="use-cases" className="w-full flex justify-center"><UseCases /></div>

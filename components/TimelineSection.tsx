@@ -11,10 +11,10 @@ const TimelineSection: React.FC = () => {
             <div className="max-w-4xl mx-auto relative z-10">
                 <div className="text-center mb-24">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
-                        The Campaign Engine
+                        We Orchestrate The Entire Journey
                     </h2>
                     <p className="text-lg text-stone-400 max-w-xl mx-auto">
-                        Olive orchestrates complex, multi-day journeys autonomously.
+                        From the first click to the booked meeting, we build the custom integrations and logic to drive conversion.
                     </p>
                 </div>
 
@@ -111,7 +111,7 @@ const TimelineSection: React.FC = () => {
                             <div className="absolute left-8 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-stone-950 border-2 border-stone-600 z-10"></div>
 
                             <div className="w-1/2 pr-12 text-right hidden md:block">
-                                <h3 className="text-xl font-bold text-white mb-1">SMS Nurture</h3>
+                                <h3 className="text-xl font-bold text-white mb-1">WhatsApp Nurture</h3>
                                 <p className="text-stone-400 text-sm">T+2h: No Answer Follow-up</p>
                             </div>
 
@@ -125,7 +125,7 @@ const TimelineSection: React.FC = () => {
                                     <div className="bg-[#2a2a2a] text-stone-200 p-3 rounded-2xl rounded-bl-none text-sm mb-2 w-fit">
                                         Hi Arjun, saw your interest in securing a personal loan. Still interested?
                                     </div>
-                                    <div className="text-[10px] text-stone-500 font-medium pl-1">Delivered</div>
+                                    <div className="text-[10px] text-stone-500 font-medium pl-1">WhatsApp • Delivered</div>
                                 </motion.div>
                             </div>
                         </div>

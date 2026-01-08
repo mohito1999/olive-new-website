@@ -35,8 +35,8 @@ const UseCases: React.FC = () => {
     return (
         <section className="py-24 px-6 max-w-7xl mx-auto w-full">
             <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-5xl font-bold text-stone-900 mb-4">Install Skills like Apps</h2>
-                <p className="text-stone-500">Olive comes pre-trained with playbooks for every stage of the funnel.</p>
+                <h2 className="text-3xl md:text-5xl font-bold text-stone-900 mb-4">Proven Playbooks We Deploy</h2>
+                <p className="text-stone-500">We implement battle-tested workflows customized for your specific funnel.</p>
             </div>
 
             <div className="flex flex-col lg:flex-row gap-8 lg:h-[500px]">
@@ -225,7 +225,7 @@ const ReactivationVisual = () => {
                 transition={{ delay: 2 }}
                 className="bg-white rounded-xl p-4 shadow-xl"
             >
-                <div className="text-xs text-stone-400 mb-2">Sending SMS to: <span className="text-stone-800">(555) 123-4567</span></div>
+                <div className="text-xs text-stone-400 mb-2">Sending WhatsApp to: <span className="text-stone-800">(555) 123-4567</span></div>
                 <div className="text-sm font-medium text-stone-900 mb-2">"Hey Sidharth, we have 2 spots left for the new coaching cohort. Want back in?"</div>
             </motion.div>
         </motion.div>

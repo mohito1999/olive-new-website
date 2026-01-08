@@ -102,9 +102,9 @@ const ParadigmGrid: React.FC = () => {
                         <div className="w-14 h-14 bg-gradient-to-br from-olive-500/10 to-olive-500/20 rounded-2xl border border-olive-500/20 flex items-center justify-center mb-6 text-olive-400 shadow-sm">
                             <InfinityIcon size={28} />
                         </div>
-                        <h3 className="text-2xl font-bold text-white mb-2">Olive is Infinite</h3>
+                        <h3 className="text-2xl font-bold text-white mb-2">Infinite Scale, Managed Execution</h3>
                         <p className="text-stone-400 leading-relaxed">
-                            Instant speed-to-lead. Infinite follow-up. Zero burnout. Olive scales elastically with your lead volume.
+                            We deploy elastic AI capacity that instantly engages every lead. No hiring, no training, no burnout. Just results.
                         </p>
                     </div>
                     <div className="mt-8 flex-1 bg-stone-950/50 border-t border-stone-800 p-6 relative overflow-hidden flex flex-col items-center justify-center">

@@ -52,8 +52,8 @@ const Navbar: React.FC = () => {
         {/* CTA */}
         <div className="hidden md:flex items-center gap-4">
           {/* <a href="#" className="text-sm font-medium text-stone-900 hover:text-olive-600">Log in</a> */}
-          <a href="https://cal.com/mohitatneurix/30min" target="_blank" rel="noopener noreferrer" className="bg-olive-600 hover:bg-olive-700 text-white px-5 py-2.5 rounded-xl text-sm font-medium transition-all shadow-sm hover:shadow-md">
-            Book a demo
+          <a href="https://cal.com/mohitatneurix/30min" target="_blank" rel="noopener noreferrer" className="bg-olive-600 hover:bg-olive-700 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-colors shadow-sm">
+            Book Sprint
           </a>
         </div>
 
@@ -83,7 +83,7 @@ const Navbar: React.FC = () => {
           <hr className="border-stone-100" />
           {/* <a href="#" className="text-lg font-medium text-stone-900">Log in</a> */}
           <a href="https://cal.com/mohitatneurix/30min" target="_blank" rel="noopener noreferrer" className="bg-olive-600 text-white px-5 py-3 rounded-xl text-base font-medium w-full text-center">
-            Book a demo
+            Book a Solution Sprint
           </a>
         </div>
       )}

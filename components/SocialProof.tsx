@@ -7,7 +7,7 @@ const SocialProof: React.FC = () => {
             <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
 
                 <div className="text-stone-400 text-sm font-semibold uppercase tracking-widest">
-                    Trusted by Sales Leaders At
+                    Powering Growth Engines For
                 </div>
 
                 <div className="flex-1 flex flex-wrap items-center justify-center gap-8 md:gap-12">
@@ -44,7 +44,7 @@ const SocialProof: React.FC = () => {
                         ))}
                     </div>
                     <p className="text-stone-700 text-sm font-medium italic mb-3">
-                        "We managed to get <span className="bg-yellow-100 px-1 text-yellow-800">20% conversion re-engagement</span> from workshop registrants. Olive is our top AE."
+                        "With Olive, our team closes up to <span className="bg-yellow-100 px-1 text-yellow-800">50% more leads</span>, at 40% less cost and with half the humans."
                     </p>
                     <div className="flex items-center gap-3">
                         <div className="w-8 h-8 bg-stone-200 rounded-full overflow-hidden">
