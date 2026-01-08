@@ -16,10 +16,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${isScrolled
-        ? 'bg-white/80 backdrop-blur-md border-stone-200 py-3'
-        : 'bg-transparent border-transparent py-5'
-        }`}
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b bg-white/95 backdrop-blur-md border-stone-200 py-3"
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
@@ -33,19 +30,30 @@ const Navbar: React.FC = () => {
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-8">
           {[
-            { name: 'Problem', href: '#problem' },
-            { name: 'Engine', href: '#engine' },
-            { name: 'Modes', href: '#modes' },
-            { name: 'Use Cases', href: '#use-cases' },
-            { name: 'Industries', href: '#industries' }
+            { name: 'Case Studies', href: '/case-studies' },
+            { name: 'Problem', href: '/#problem' },
+            { name: 'Engine', href: '/#engine' },
+            { name: 'Modes', href: '/#modes' },
+            { name: 'Use Cases', href: '/#use-cases' },
+            { name: 'Industries', href: '/#industries' }
           ].map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-sm font-medium text-stone-600 hover:text-olive-600 transition-colors"
-            >
-              {item.name}
-            </a>
+            item.href.startsWith('/') && !item.href.includes('#') ? (
+              <Link
+                key={item.name}
+                to={item.href}
+                className="text-sm font-medium text-stone-600 hover:text-olive-600 transition-colors"
+              >
+                {item.name}
+              </Link>
+            ) : (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-sm font-medium text-stone-600 hover:text-olive-600 transition-colors"
+              >
+                {item.name}
+              </a>
+            )
           ))}
         </div>
 
@@ -70,15 +78,32 @@ const Navbar: React.FC = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-stone-200 p-6 flex flex-col gap-4 shadow-xl">
           {[
-            { name: 'Problem', href: '#problem' },
-            { name: 'Engine', href: '#engine' },
-            { name: 'Modes', href: '#modes' },
-            { name: 'Use Cases', href: '#use-cases' },
-            { name: 'Industries', href: '#industries' }
+            { name: 'Case Studies', href: '/case-studies' },
+            { name: 'Problem', href: '/#problem' },
+            { name: 'Engine', href: '/#engine' },
+            { name: 'Modes', href: '/#modes' },
+            { name: 'Use Cases', href: '/#use-cases' },
+            { name: 'Industries', href: '/#industries' }
           ].map((item) => (
-            <a key={item.name} href={item.href} className="text-lg font-medium text-stone-600" onClick={() => setIsMobileMenuOpen(false)}>
-              {item.name}
-            </a>
+            item.href.startsWith('/') && !item.href.includes('#') ? (
+              <Link
+                key={item.name}
+                to={item.href}
+                className="text-lg font-medium text-stone-600"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {item.name}
+              </Link>
+            ) : (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-lg font-medium text-stone-600"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {item.name}
+              </a>
+            )
           ))}
           <hr className="border-stone-100" />
           {/* <a href="#" className="text-lg font-medium text-stone-900">Log in</a> */}

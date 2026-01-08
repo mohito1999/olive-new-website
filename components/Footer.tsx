@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-stone-950 pt-32 pb-12 px-6 w-full border-t border-stone-900 relative overflow-hidden">
       {/* Background Glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-olive-500/10 blur-[100px] rounded-full pointer-events-none"></div>
+      {/* Background Glow - Removed */}
 
       <div className="max-w-7xl mx-auto flex flex-col items-center text-center relative z-10">
 

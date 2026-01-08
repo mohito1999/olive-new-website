@@ -109,7 +109,7 @@ const ParadigmGrid: React.FC = () => {
                     </div>
                     <div className="mt-8 flex-1 bg-stone-950/50 border-t border-stone-800 p-6 relative overflow-hidden flex flex-col items-center justify-center">
                         {/* Visual: Infinite Success */}
-                        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-olive-900/20 via-stone-950 to-stone-950"></div>
+                        <div className="absolute inset-0 bg-stone-950"></div>
 
                         <div className="relative z-10 text-center">
                             <div className="h-24 w-48 mx-auto mb-4">

@@ -14,9 +14,10 @@ const LandingPage: React.FC = () => {
             <Hero />
             <SocialProof />
             <div id="problem" className="w-full flex justify-center"><ParadigmGrid /></div>
-            <div className="w-full flex justify-center"><SolutionSprint /></div>
+
             <div id="engine" className="w-full flex justify-center"><TimelineSection /></div>
             <div id="modes" className="w-full flex justify-center"><ModesSection /></div>
+            <div className="w-full flex justify-center"><SolutionSprint /></div>
             <div id="use-cases" className="w-full flex justify-center"><UseCases /></div>
             <div id="industries" className="w-full flex justify-center"><IndustryUseCases /></div>
         </>

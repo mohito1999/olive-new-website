@@ -5,6 +5,8 @@ import Footer from './components/Footer';
 import LandingPage from './components/LandingPage';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfService from './components/TermsOfService';
+import CaseStudiesPage from './components/CaseStudiesPage';
+import HouseOfEdTech from './components/case-studies/HouseOfEdTech';
 
 const App: React.FC = () => {
   return (
@@ -14,6 +16,8 @@ const App: React.FC = () => {
         <main className="flex flex-col items-center w-full">
           <Routes>
             <Route path="/" element={<LandingPage />} />
+            <Route path="/case-studies" element={<CaseStudiesPage />} />
+            <Route path="/case-studies/house-of-edtech" element={<HouseOfEdTech />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsOfService />} />
           </Routes>

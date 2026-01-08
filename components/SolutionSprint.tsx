@@ -4,12 +4,8 @@ import { Search, Settings, TrendingUp, ArrowRight } from 'lucide-react';
 
 const SolutionSprint: React.FC = () => {
     return (
-        <section className="py-24 px-6 bg-stone-900 w-full relative overflow-hidden">
-            {/* Background elements */}
-            <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-                <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-olive-500/10 rounded-full blur-3xl"></div>
-                <div className="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] bg-stone-800/50 rounded-full blur-3xl"></div>
-            </div>
+        <section className="py-24 px-6 bg-stone-950 w-full relative overflow-hidden">
+            {/* Background elements - Removed per feedback */}
 
             <div className="max-w-7xl mx-auto relative z-10">
                 <div className="text-center mb-20">
