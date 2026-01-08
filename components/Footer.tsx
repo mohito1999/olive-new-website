@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto flex flex-col items-center text-center relative z-10">
 
         <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 tracking-tight leading-tight">
-          An AI sales agent that actually<br className="hidden md:block" />
+          An AI sales agent that actually <br className="hidden md:block" />
           <span className="text-olive-500">works your leads.</span>
         </h2>
 
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="w-full border-t border-stone-900 pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-stone-500">
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" className="hidden md:flex items-center gap-2">
             <div className="w-6 h-6 bg-olive-500 rounded flex items-center justify-center">
               <div className="w-2.5 h-2.5 bg-stone-950 rounded-full" />
             </div>
@@ -40,8 +40,16 @@ const Footer: React.FC = () => {
             <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
 
-          <div className="font-mono text-xs">
-            © 2025 Reboot Labs
+          <div className="flex items-center gap-4">
+            <Link to="/" className="flex md:hidden items-center gap-2">
+              <div className="w-6 h-6 bg-olive-500 rounded flex items-center justify-center">
+                <div className="w-2.5 h-2.5 bg-stone-950 rounded-full" />
+              </div>
+              <span className="font-bold text-white text-lg tracking-tight">Olive</span>
+            </Link>
+            <div className="font-mono text-xs">
+              © 2026 Reboot Labs
+            </div>
           </div>
         </div>
 
