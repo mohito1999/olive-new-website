@@ -225,7 +225,7 @@ const ReactivationVisual = () => {
                 transition={{ delay: 2 }}
                 className="bg-white rounded-xl p-4 shadow-xl"
             >
-                <div className="text-xs text-stone-400 mb-2">Sending WhatsApp to: <span className="text-stone-800">(555) 123-4567</span></div>
+                <div className="text-xs text-stone-400 mb-2">Sending WhatsApp to: <span className="text-stone-800">9672619061</span></div>
                 <div className="text-sm font-medium text-stone-900 mb-2">"Hey Sidharth, we have 2 spots left for the new coaching cohort. Want back in?"</div>
             </motion.div>
         </motion.div>
